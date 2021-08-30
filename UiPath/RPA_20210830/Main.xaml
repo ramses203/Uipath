@@ -474,11 +474,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[DT_ACME]" DisplayName="Extract Structured Data 'TBODY'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='WIID' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Description' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="1000" NextLinkSelector="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
                       <ui:ExtractData.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d7967ba-587d-4ed4-aee3-a411b99e599d" InformativeScreenshot="54da7d8d45c25481fb102d28b39b42b6" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                        </ui:Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d7967ba-587d-4ed4-aee3-a411b99e599d" InformativeScreenshot="54da7d8d45c25481fb102d28b39b42b6" Selector="&lt;webctrl tag='TBODY' /&gt;" TimeoutMS="2500" WaitForReady="COMPLETE" />
                       </ui:ExtractData.Target>
                     </ui:ExtractData>
                   </Sequence>
